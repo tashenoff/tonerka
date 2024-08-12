@@ -1,7 +1,9 @@
-export default function Btn({ text }) {
+export default function Btn({ text, children, className, onClick, href  }) {
     return (
-        <a className="bg-red-500 px-5 rounded-full py-2">
+        <a href={href} className={className} onClick={onClick}>
             {text}
+            {children}
+
         </a>
     );
 }
